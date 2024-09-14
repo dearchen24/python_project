@@ -1,0 +1,26 @@
+import cv2
+img = cv2.imread("./image/cat.jpg")
+cv2.imshow("cat",img)
+print(type(img))
+print(img.shape)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# img_rgb=cv2.imread("./image/cat.jpg",1)
+# img_gray=cv2.imread("./image/cat.jpg",0)
+# cv2.imshow("rgb",img_rgb)
+# cv2.imshow("gray",img_gray)
+# print("rgb shape:"+str(img_rgb.shape)+" gray shape:"+str(img_gray.shape))
+# cv2.waitKeyEx(0)
+# cv2.destroyAllWindows()
+
+# def img_read():
+#     img_rgb=cv2.imread("./image/cat.jpg",1)
+#     b,g,r=cv2.split(img_rgb)
+#     img_merge = cv2.merge((b, g, r))
+#     cv2.imshow("rgb",img_rgb)
+#     cv2.imshow("gray",r)
+#     cv2.imshow("merge", img_merge)
+#     print("rgb shape:"+str(img_rgb.shape)+" gray shape:"+str(g.shape))
+#     cv2.waitKeyEx(0)
+#     cv2.destroyAllWindows()
